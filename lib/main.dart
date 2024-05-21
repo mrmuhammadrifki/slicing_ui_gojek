@@ -63,6 +63,127 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+              'Other Services',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+             
+            
+            
+            ElevatedButton(
+              onPressed: () {
+                // Define the action when the button is pressed
+              },
+              child: const Text('Click'),
+            ),
+          ],
+        ),
+        const SizedBox(height: 16.0),
+        const Text('Loyalty',
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+        ),
+        const SizedBox(height: 16.0),
+       
+         
+            ListTile(
+              horizontalTitleGap: 0.0,
+             contentPadding: const EdgeInsets.symmetric(horizontal:0),
+              leading: SvgPicture.asset('images/Group 23.svg',semanticsLabel: 'GoClub' ),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('GoClub',style: TextStyle(fontWeight: FontWeight.bold)),
+                  const Text('Our new loyalty program',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 14)),
+                ],
+              
+              ),
+            
+            ),
+           const SizedBox(height: 16.0),
+        const Text('COVID-19 resources',
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+        ),
+        const SizedBox(height: 16.0),
+       
+         
+            ListTile(
+             horizontalTitleGap: 0.0,
+             contentPadding: const EdgeInsets.symmetric(horizontal:0),
+              leading: SvgPicture.asset('images/medic.svg',semanticsLabel: 'GoClub' ),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('GoMed',style: TextStyle(fontWeight: FontWeight.bold)),
+                  const Text('Medical assistance at your fingertips',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 14)),
+                ],
+              
+              ),
+            
+            ),
+            const SizedBox(height: 16.0),
+        const Text('Food delivery and shooping',
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+        ),
+        const SizedBox(height: 16.0),
+       
+         
+            ListTile(
+              horizontalTitleGap: 0.0,
+             contentPadding: const EdgeInsets.symmetric(horizontal:0),
+              leading: SvgPicture.asset('images/GoFood icon.svg',semanticsLabel: 'GoClub' ),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('GoFood', style: TextStyle(fontWeight: FontWeight.bold)),
+                  const Text('The all-around answer to your appetite',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 14)),
+                ],
+              
+              ),
+            
+            ),
+            ListTile(
+            horizontalTitleGap: 0.0,
+             contentPadding: const EdgeInsets.symmetric(horizontal:0),
+
+              leading: SvgPicture.asset('images/gomart.svg',semanticsLabel: 'GoClub' ),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('GoMart',style: TextStyle(fontWeight: FontWeight.bold)),
+                  const Text('Shopping for urgent needs? We got ‘em!',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 14)),
+                ],
+              
+              ),
+            
+            ),
+          
+        
+       ],
+       
+            )
+        
+      ),
     );
   }
 }
+
