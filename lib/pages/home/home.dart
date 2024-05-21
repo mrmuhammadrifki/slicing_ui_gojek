@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gojek_swu/common/styles.dart';
+import 'package:gojek_swu/pages/home/widgets/services.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -227,41 +229,54 @@ class _HomePageState extends State<HomePage> {
                 childAspectRatio: 0.8,
                 crossAxisCount: 4,
                 physics: const NeverScrollableScrollPhysics(),
-                children: const [
-                  MenuItem(
+                children: [
+                  const MenuItem(
                     icon: 'images/goride.svg',
                     semanticsLabel: 'Icon GoRide',
                     title: 'GoRide',
                   ),
-                  MenuItem(
+                  const MenuItem(
                     icon: 'images/gocar.svg',
                     semanticsLabel: 'Icon GoCar',
                     title: 'GoCar',
                   ),
-                  MenuItem(
+                  const MenuItem(
                     icon: 'images/gofood.svg',
                     semanticsLabel: 'Icon GoFood',
                     title: 'GoFood',
                   ),
-                  MenuItem(
+                  const MenuItem(
                     icon: 'images/gosend.svg',
                     semanticsLabel: 'Icon GoSend',
                     title: 'GoSend',
                   ),
-                  MenuItem(
+                  const MenuItem(
                     icon: 'images/gomart.svg',
                     semanticsLabel: 'Icon GoMart',
                     title: 'GoMart',
                   ),
-                  MenuItem(
+                  const MenuItem(
                     icon: 'images/gotagihan.svg',
                     semanticsLabel: 'Icon GoTagihan',
                     title: 'GoTagihan',
                   ),
-                  MenuItem(
-                    icon: 'images/more.svg',
-                    semanticsLabel: 'Icon More',
-                    title: 'More',
+                  const MenuItem(
+                    icon: 'images/goclub.svg',
+                    semanticsLabel: 'Icon GoClub',
+                    title: 'GoClub',
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return const Services();
+                      }));
+                    },
+                    child: const MenuItem(
+                      icon: 'images/more.svg',
+                      semanticsLabel: 'Icon More',
+                      title: 'More',
+                    ),
                   ),
                 ],
               ),
