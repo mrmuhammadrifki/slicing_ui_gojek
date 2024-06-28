@@ -6,7 +6,7 @@ Selamat datang di proyek clone aplikasi Gojek menggunakan Flutter! Proyek ini di
 
 ## Fitur Utama
 
-- **Navigasi yang intuitif** dengan menggunakan `BottomNavigationBar` untuk mengakses berbagai layanan dengan mudah seperti layanan transportasi, pengantaran makanan, belanja, dan lainnya.
+- **Navigasi yang intuitif** dengan menggunakan `BottomNavigationBar` untuk mengakses berbagai layanan dengan mudah seperti halaman beranda, promo, pesanan, dan chat.
 - **Promo menarik dengan Carousel** - Tampilkan promo terbaru secara menarik dengan menggunakan `carousel_slider` dan `dots_indicator`, memastikan pengalaman pengguna yang menarik dan interaktif.
 - **Loading yang menarik dengan Shimmer** - Meningkatkan pengalaman pengguna saat data dimuat dengan efek `shimmer`, memberikan indikasi visual bahwa aplikasi sedang memuat informasi.
 
@@ -32,8 +32,8 @@ Pastikan Anda memiliki Flutter SDK dan Dart SDK yang terbaru diinstal di sistem 
 1. **Clone repository ini:**
 
    ```sh
-   git clone https://github.com/mrmuhammadrifki/gojek-clone.git
-   cd gojek-clone-flutter
+   git clone https://github.com/mrmuhammadrifki/slicing_ui_gojek.git
+   cd slicing_ui_gojek
    ```
 
 2. **Instal dependencies:**
